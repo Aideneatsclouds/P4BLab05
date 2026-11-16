@@ -1,6 +1,6 @@
 # SECB3203 Lab 5 - Functions and modules: sequence_utils.py and normalize.py
 
-Student: <name, matric no>
+Student: YAASWINY ABBIRAMAVALLY THINAHARAN A24CS0213
 
 ## Setup
     python -m venv .venv

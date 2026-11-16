@@ -3,17 +3,17 @@
 <!-- SECB3203 prompt log. Policy: PROPOSED - for approval by the SECB3203 course team before circulation to students. Fill in, then run: python tools/check_ai_log.py AI_USE_LOG.md --assessment <key> -->
 
 - Course: SECB3203
-- Assessment: <e.g. Lab 4>
-- Student name: <full name>
-- Matric no: <matric>
+- Assessment: Lab 5
+- Student name: YAASWINY ABBIRAMAVALLY THINAHARAN
+- Matric no: A24CS0213
 - Group ID: <group work only, else n/a>
-- AI level: <0, 1 or 2 - see the assessment brief>
+- AI level: 1
 - Tools cited: <UTM format, e.g. OpenAI (2026). ChatGPT (GPT-5). Retrieved 12 October 2026 from https://chat.openai.com>
 
 ## Declaration (tick exactly one)
 
 - [ ] NIL RETURN: I did not use any generative AI tool for this assessment.
-- [ ] I used AI. Every interaction that influenced my work is logged below. The log is true and complete.
+- [X] I used AI. Every interaction that influenced my work is logged below. The log is true and complete.
 
 ## Entry 1
 
