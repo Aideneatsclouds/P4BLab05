@@ -34,9 +34,25 @@ def gc_content(sequence: str) -> float:
 
 def reverse_complement(sequence: str) -> str:
     """Return the reverse complement; ValueError if invalid."""
-    raise NotImplementedError("TODO: implement reverse_complement")
+    if not is_valid_dna(sequence, allow_n=True):
+        raise ValueError("Invalid or empty DNA sequence for reverse complement.")
+    return sequence.upper().translate(COMPLEMENT)[::-1]
 
 
 def find_motif(sequence: str, motif: str) -> list[int]:
     """Return every 0-based start of motif (overlaps allowed)."""
-    raise NotImplementedError("TODO: implement find_motif")
+    if not motif:
+        raise ValueError("Motif cannot be empty.")
+    if not sequence or len(motif) > len(sequence):
+        return []
+    
+    seq_lower = sequence.lower()
+    motif_lower = motif.lower()
+    positions = []
+    m_len = len(motif)
+    
+    for i in range(len(sequence) - m_len + 1):
+        if seq_lower[i:i + m_len] == motif_lower:
+            positions.append(i)
+            
+    return positions
