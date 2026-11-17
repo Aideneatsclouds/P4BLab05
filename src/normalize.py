@@ -9,11 +9,11 @@ def proportions(counts: list[float]) -> list[float]:
     """
     if not counts:
         raise ValueError("Counts list cannot be empty.")
-    
+
     total = sum(counts)
     if total == 0:
         raise ValueError("Total sum of counts cannot be zero.")
-        
+
     return [x / total for x in counts]
 
 
@@ -25,11 +25,11 @@ def cpm(counts: list[float], library_size: float | None = None) -> list[float]:
     """
     if not counts:
         raise ValueError("Counts list cannot be empty.")
-        
+
     if library_size is None:
         library_size = sum(counts)
-        
+
     if library_size <= 0:
         raise ValueError("Library size must be greater than zero.")
-        
+
     return [(x / library_size) * 1_000_000 for x in counts]
