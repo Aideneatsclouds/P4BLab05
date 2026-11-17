@@ -18,4 +18,4 @@ Student: YAASWINY ABBIRAMAVALLY THINAHARAN A24CS0213
 - `AI_USE_LOG.md` : my AI prompt log (or nil return)
 
 ## Design decisions
-<Two or three sentences: why proportions() raises ValueError when the total is zero, and which line of your code makes sure the input list is not changed.>
+`proportions()` raises a `ValueError` when the total sum of counts is zero to prevent division by zero and avoid returning a misleading list of zeros that could masquerade as valid expression data. The input list remains completely untouched because the function computes and returns a brand-new list using a list comprehension (`[x / total for x in counts]`) instead of performing any in-place assignments.
